@@ -32,8 +32,14 @@ class ViewController: UIViewController {
             print("password is empty")
             return
         }
+        
+        //Using Storyboard
         let nextViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomePageController") as! HomeViewController
         navigationController?.pushViewController(nextViewController, animated: true)
+        
+        //Using Segue
+        //performSegue(withIdentifier: "HomePageController", sender: self)
+        
     }
     
 }
