@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6875D92E2A0C2D8600F440DF /* UIDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6875D92D2A0C2D8600F440DF /* UIDesign.swift */; };
+		687CFF0F29E5FDED00BC3480 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CFF0E29E5FDED00BC3480 /* AppDelegate.swift */; };
+		687CFF1129E5FDED00BC3480 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CFF1029E5FDED00BC3480 /* SceneDelegate.swift */; };
+		687CFF1329E5FDED00BC3480 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CFF1229E5FDED00BC3480 /* ViewController.swift */; };
+		687CFF1629E5FDED00BC3480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687CFF1429E5FDED00BC3480 /* Main.storyboard */; };
+		687CFF1829E5FDEE00BC3480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687CFF1729E5FDEE00BC3480 /* Assets.xcassets */; };
+		687CFF1B29E5FDEE00BC3480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687CFF1929E5FDEE00BC3480 /* LaunchScreen.storyboard */; };
+		687CFF2629E5FDEF00BC3480 /* ReecleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CFF2529E5FDEF00BC3480 /* ReecleTests.swift */; };
+		687CFF3029E5FDEF00BC3480 /* ReecleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CFF2F29E5FDEF00BC3480 /* ReecleUITests.swift */; };
+		687CFF3229E5FDEF00BC3480 /* ReecleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CFF3129E5FDEF00BC3480 /* ReecleUITestsLaunchTests.swift */; };
+		68F549432A0C1C8D009588A0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F549422A0C1C8D009588A0 /* SignUpViewController.swift */; };
+		68F549452A0C1CAA009588A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F549442A0C1CAA009588A0 /* HomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		687CFF2229E5FDEF00BC3480 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 687CFF0329E5FDED00BC3480 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 687CFF0A29E5FDED00BC3480;
+			remoteInfo = Reecle;
+		};
+		687CFF2C29E5FDEF00BC3480 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 687CFF0329E5FDED00BC3480 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 687CFF0A29E5FDED00BC3480;
+			remoteInfo = Reecle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6875D92D2A0C2D8600F440DF /* UIDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDesign.swift; sourceTree = "<group>"; };
+		687CFF0B29E5FDED00BC3480 /* Reecle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reecle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		687CFF0E29E5FDED00BC3480 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		687CFF1029E5FDED00BC3480 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		687CFF1229E5FDED00BC3480 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		687CFF1529E5FDED00BC3480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		687CFF1729E5FDEE00BC3480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		687CFF1A29E5FDEE00BC3480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		687CFF1C29E5FDEE00BC3480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		687CFF2129E5FDEF00BC3480 /* ReecleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReecleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		687CFF2529E5FDEF00BC3480 /* ReecleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReecleTests.swift; sourceTree = "<group>"; };
+		687CFF2B29E5FDEF00BC3480 /* ReecleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReecleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		687CFF2F29E5FDEF00BC3480 /* ReecleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReecleUITests.swift; sourceTree = "<group>"; };
+		687CFF3129E5FDEF00BC3480 /* ReecleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReecleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		68F549422A0C1C8D009588A0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		68F549442A0C1CAA009588A0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		687CFF0829E5FDED00BC3480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687CFF1E29E5FDEE00BC3480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687CFF2829E5FDEF00BC3480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		687CFF0229E5FDED00BC3480 = {
+			isa = PBXGroup;
+			children = (
+				687CFF0D29E5FDED00BC3480 /* Reecle */,
+				687CFF2429E5FDEF00BC3480 /* ReecleTests */,
+				687CFF2E29E5FDEF00BC3480 /* ReecleUITests */,
+				687CFF0C29E5FDED00BC3480 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		687CFF0C29E5FDED00BC3480 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				687CFF0B29E5FDED00BC3480 /* Reecle.app */,
+				687CFF2129E5FDEF00BC3480 /* ReecleTests.xctest */,
+				687CFF2B29E5FDEF00BC3480 /* ReecleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		687CFF0D29E5FDED00BC3480 /* Reecle */ = {
+			isa = PBXGroup;
+			children = (
+				687CFF0E29E5FDED00BC3480 /* AppDelegate.swift */,
+				687CFF1029E5FDED00BC3480 /* SceneDelegate.swift */,
+				687CFF1229E5FDED00BC3480 /* ViewController.swift */,
+				687CFF1429E5FDED00BC3480 /* Main.storyboard */,
+				687CFF1729E5FDEE00BC3480 /* Assets.xcassets */,
+				687CFF1929E5FDEE00BC3480 /* LaunchScreen.storyboard */,
+				687CFF1C29E5FDEE00BC3480 /* Info.plist */,
+				68F549422A0C1C8D009588A0 /* SignUpViewController.swift */,
+				68F549442A0C1CAA009588A0 /* HomeViewController.swift */,
+				6875D92D2A0C2D8600F440DF /* UIDesign.swift */,
+			);
+			path = Reecle;
+			sourceTree = "<group>";
+		};
+		687CFF2429E5FDEF00BC3480 /* ReecleTests */ = {
+			isa = PBXGroup;
+			children = (
+				687CFF2529E5FDEF00BC3480 /* ReecleTests.swift */,
+			);
+			path = ReecleTests;
+			sourceTree = "<group>";
+		};
+		687CFF2E29E5FDEF00BC3480 /* ReecleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				687CFF2F29E5FDEF00BC3480 /* ReecleUITests.swift */,
+				687CFF3129E5FDEF00BC3480 /* ReecleUITestsLaunchTests.swift */,
+			);
+			path = ReecleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		687CFF0A29E5FDED00BC3480 /* Reecle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 687CFF3529E5FDEF00BC3480 /* Build configuration list for PBXNativeTarget "Reecle" */;
+			buildPhases = (
+				687CFF0729E5FDED00BC3480 /* Sources */,
+				687CFF0829E5FDED00BC3480 /* Frameworks */,
+				687CFF0929E5FDED00BC3480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reecle;
+			productName = Reecle;
+			productReference = 687CFF0B29E5FDED00BC3480 /* Reecle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		687CFF2029E5FDEE00BC3480 /* ReecleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 687CFF3829E5FDEF00BC3480 /* Build configuration list for PBXNativeTarget "ReecleTests" */;
+			buildPhases = (
+				687CFF1D29E5FDEE00BC3480 /* Sources */,
+				687CFF1E29E5FDEE00BC3480 /* Frameworks */,
+				687CFF1F29E5FDEE00BC3480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				687CFF2329E5FDEF00BC3480 /* PBXTargetDependency */,
+			);
+			name = ReecleTests;
+			productName = ReecleTests;
+			productReference = 687CFF2129E5FDEF00BC3480 /* ReecleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		687CFF2A29E5FDEF00BC3480 /* ReecleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 687CFF3B29E5FDEF00BC3480 /* Build configuration list for PBXNativeTarget "ReecleUITests" */;
+			buildPhases = (
+				687CFF2729E5FDEF00BC3480 /* Sources */,
+				687CFF2829E5FDEF00BC3480 /* Frameworks */,
+				687CFF2929E5FDEF00BC3480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				687CFF2D29E5FDEF00BC3480 /* PBXTargetDependency */,
+			);
+			name = ReecleUITests;
+			productName = ReecleUITests;
+			productReference = 687CFF2B29E5FDEF00BC3480 /* ReecleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		687CFF0329E5FDED00BC3480 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					687CFF0A29E5FDED00BC3480 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					687CFF2029E5FDEE00BC3480 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 687CFF0A29E5FDED00BC3480;
+					};
+					687CFF2A29E5FDEF00BC3480 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 687CFF0A29E5FDED00BC3480;
+					};
+				};
+			};
+			buildConfigurationList = 687CFF0629E5FDED00BC3480 /* Build configuration list for PBXProject "Reecle" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 687CFF0229E5FDED00BC3480;
+			productRefGroup = 687CFF0C29E5FDED00BC3480 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				687CFF0A29E5FDED00BC3480 /* Reecle */,
+				687CFF2029E5FDEE00BC3480 /* ReecleTests */,
+				687CFF2A29E5FDEF00BC3480 /* ReecleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		687CFF0929E5FDED00BC3480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687CFF1B29E5FDEE00BC3480 /* LaunchScreen.storyboard in Resources */,
+				687CFF1829E5FDEE00BC3480 /* Assets.xcassets in Resources */,
+				687CFF1629E5FDED00BC3480 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687CFF1F29E5FDEE00BC3480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687CFF2929E5FDEF00BC3480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		687CFF0729E5FDED00BC3480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F549452A0C1CAA009588A0 /* HomeViewController.swift in Sources */,
+				687CFF1329E5FDED00BC3480 /* ViewController.swift in Sources */,
+				687CFF0F29E5FDED00BC3480 /* AppDelegate.swift in Sources */,
+				68F549432A0C1C8D009588A0 /* SignUpViewController.swift in Sources */,
+				687CFF1129E5FDED00BC3480 /* SceneDelegate.swift in Sources */,
+				6875D92E2A0C2D8600F440DF /* UIDesign.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687CFF1D29E5FDEE00BC3480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687CFF2629E5FDEF00BC3480 /* ReecleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687CFF2729E5FDEF00BC3480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687CFF3229E5FDEF00BC3480 /* ReecleUITestsLaunchTests.swift in Sources */,
+				687CFF3029E5FDEF00BC3480 /* ReecleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		687CFF2329E5FDEF00BC3480 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 687CFF0A29E5FDED00BC3480 /* Reecle */;
+			targetProxy = 687CFF2229E5FDEF00BC3480 /* PBXContainerItemProxy */;
+		};
+		687CFF2D29E5FDEF00BC3480 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 687CFF0A29E5FDED00BC3480 /* Reecle */;
+			targetProxy = 687CFF2C29E5FDEF00BC3480 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		687CFF1429E5FDED00BC3480 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				687CFF1529E5FDED00BC3480 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		687CFF1929E5FDEE00BC3480 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				687CFF1A29E5FDEE00BC3480 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		687CFF3329E5FDEF00BC3480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		687CFF3429E5FDEF00BC3480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		687CFF3629E5FDEF00BC3480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reecle/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.first.Reecle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		687CFF3729E5FDEF00BC3480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reecle/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.first.Reecle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		687CFF3929E5FDEF00BC3480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.first.ReecleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reecle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reecle";
+			};
+			name = Debug;
+		};
+		687CFF3A29E5FDEF00BC3480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.first.ReecleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reecle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reecle";
+			};
+			name = Release;
+		};
+		687CFF3C29E5FDEF00BC3480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.first.ReecleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Reecle;
+			};
+			name = Debug;
+		};
+		687CFF3D29E5FDEF00BC3480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.first.ReecleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Reecle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		687CFF0629E5FDED00BC3480 /* Build configuration list for PBXProject "Reecle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687CFF3329E5FDEF00BC3480 /* Debug */,
+				687CFF3429E5FDEF00BC3480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		687CFF3529E5FDEF00BC3480 /* Build configuration list for PBXNativeTarget "Reecle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687CFF3629E5FDEF00BC3480 /* Debug */,
+				687CFF3729E5FDEF00BC3480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		687CFF3829E5FDEF00BC3480 /* Build configuration list for PBXNativeTarget "ReecleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687CFF3929E5FDEF00BC3480 /* Debug */,
+				687CFF3A29E5FDEF00BC3480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		687CFF3B29E5FDEF00BC3480 /* Build configuration list for PBXNativeTarget "ReecleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687CFF3C29E5FDEF00BC3480 /* Debug */,
+				687CFF3D29E5FDEF00BC3480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 687CFF0329E5FDED00BC3480 /* Project object */;
+}
