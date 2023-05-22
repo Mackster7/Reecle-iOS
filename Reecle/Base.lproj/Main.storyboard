@@ -169,6 +169,9 @@
                                         <rect key="frame" x="0.0" y="215.99999999999997" width="348" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="newUserSignUp:" destination="1ic-re-McJ" eventType="touchUpInside" id="IaM-sc-vVs"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label to show the error message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQx-rP-GZf">
                                         <rect key="frame" x="0.0" y="270.33333333333337" width="348" height="20.333333333333314"/>
@@ -197,7 +200,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="hDj-L8-2Zv"/>
                     <connections>
+                        <outlet property="LastNameTextField" destination="fA6-sv-ZLB" id="aCF-DU-Z8p"/>
+                        <outlet property="emailTextField" destination="hbz-z2-nb0" id="tSv-LK-r2B"/>
+                        <outlet property="errorLabel" destination="XQx-rP-GZf" id="g0f-Ef-DSE"/>
                         <outlet property="finalSignUp" destination="0Ma-Ch-2OA" id="Fec-HX-2NV"/>
+                        <outlet property="firstNameTextField" destination="oxI-pt-4dg" id="njo-zP-1sV"/>
+                        <outlet property="passwordTextField" destination="VKr-tc-12i" id="U9i-nZ-Xkv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncp-oU-8lW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
