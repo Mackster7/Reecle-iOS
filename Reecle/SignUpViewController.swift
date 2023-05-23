@@ -16,17 +16,28 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var navigateBack: UIImageView!
     @IBOutlet weak var passwordTextField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         errorLabel.isHidden = true
         btnDesign.addButtonStyling(btn: finalSignUp)
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
+        navigateBack.addGestureRecognizer(tapGR)
+        navigateBack.isUserInteractionEnabled = true
     }
 
     @IBAction func newUserSignUp(_ sender: Any) {
         if validateFields() {
             // Perform signup logic
+        }
+    }
+    
+    @objc func imageTapped(sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+            navigationController?.popViewController(animated: true)
         }
     }
     

@@ -186,12 +186,19 @@
                                     <constraint firstItem="VKr-tc-12i" firstAttribute="height" secondItem="oxI-pt-4dg" secondAttribute="height" id="jMa-9N-mkj"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="arrow.backward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rBk-oR-i33">
+                                <rect key="frame" x="20" y="54" width="70" height="28"/>
+                                <color key="tintColor" red="0.0" green="0.27912414965986393" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sQa-sQ-pPh"/>
                         <color key="backgroundColor" red="0.73884427549999998" green="0.9043492675" blue="0.73788875340000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="rBk-oR-i33" firstAttribute="top" secondItem="sQa-sQ-pPh" secondAttribute="top" constant="5" id="7pi-5T-Cc6"/>
                             <constraint firstItem="eVg-34-Yjn" firstAttribute="top" secondItem="6Gx-S8-1dj" secondAttribute="bottom" constant="40" id="9Yc-Et-ntw"/>
                             <constraint firstItem="eVg-34-Yjn" firstAttribute="leading" secondItem="sQa-sQ-pPh" secondAttribute="leading" constant="40" id="Ss8-vL-ju1"/>
+                            <constraint firstItem="rBk-oR-i33" firstAttribute="leading" secondItem="sQa-sQ-pPh" secondAttribute="leading" constant="20" id="U39-AT-uRh"/>
                             <constraint firstItem="6Gx-S8-1dj" firstAttribute="top" secondItem="sQa-sQ-pPh" secondAttribute="top" constant="80" id="WFW-9W-Lgm"/>
                             <constraint firstItem="6Gx-S8-1dj" firstAttribute="centerX" secondItem="53L-h3-TZn" secondAttribute="centerX" id="fZX-Oh-7wC"/>
                             <constraint firstItem="eVg-34-Yjn" firstAttribute="centerX" secondItem="53L-h3-TZn" secondAttribute="centerX" id="jMg-s5-cBt"/>
@@ -205,6 +212,7 @@
                         <outlet property="errorLabel" destination="XQx-rP-GZf" id="g0f-Ef-DSE"/>
                         <outlet property="finalSignUp" destination="0Ma-Ch-2OA" id="Fec-HX-2NV"/>
                         <outlet property="firstNameTextField" destination="oxI-pt-4dg" id="njo-zP-1sV"/>
+                        <outlet property="navigateBack" destination="rBk-oR-i33" id="HRh-pZ-VOg"/>
                         <outlet property="passwordTextField" destination="VKr-tc-12i" id="U9i-nZ-Xkv"/>
                     </connections>
                 </viewController>
@@ -231,6 +239,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="95"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
