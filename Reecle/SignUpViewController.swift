@@ -31,7 +31,7 @@ class SignUpViewController: UIViewController {
 
     @IBAction func newUserSignUp(_ sender: Any) {
         if validateFields() {
-            // Perform signup logic
+            // Perform signup logic.
         }
     }
     
