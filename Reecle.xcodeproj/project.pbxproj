@@ -105,16 +105,12 @@
 		687CFF0D29E5FDED00BC3480 /* Reecle */ = {
 			isa = PBXGroup;
 			children = (
-				687CFF0E29E5FDED00BC3480 /* AppDelegate.swift */,
-				687CFF1029E5FDED00BC3480 /* SceneDelegate.swift */,
-				687CFF1229E5FDED00BC3480 /* ViewController.swift */,
-				687CFF1429E5FDED00BC3480 /* Main.storyboard */,
 				687CFF1729E5FDEE00BC3480 /* Assets.xcassets */,
-				687CFF1929E5FDEE00BC3480 /* LaunchScreen.storyboard */,
 				687CFF1C29E5FDEE00BC3480 /* Info.plist */,
-				68F549422A0C1C8D009588A0 /* SignUpViewController.swift */,
-				68F549442A0C1CAA009588A0 /* HomeViewController.swift */,
-				6875D92D2A0C2D8600F440DF /* UIDesign.swift */,
+				68A40CBC2A233F0500C03720 /* AppDelegate */,
+				68A40CB82A233D1F00C03720 /* Storyboards */,
+				68A40CB92A233DF800C03720 /* Commons */,
+				68A40CBB2A233E3F00C03720 /* ViewController */,
 			);
 			path = Reecle;
 			sourceTree = "<group>";
@@ -134,6 +130,50 @@
 				687CFF3129E5FDEF00BC3480 /* ReecleUITestsLaunchTests.swift */,
 			);
 			path = ReecleUITests;
+			sourceTree = "<group>";
+		};
+		68A40CB82A233D1F00C03720 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				687CFF1929E5FDEE00BC3480 /* LaunchScreen.storyboard */,
+				687CFF1429E5FDED00BC3480 /* Main.storyboard */,
+				68A40CBD2A233F6100C03720 /* cells */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		68A40CB92A233DF800C03720 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				6875D92D2A0C2D8600F440DF /* UIDesign.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		68A40CBB2A233E3F00C03720 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				68F549442A0C1CAA009588A0 /* HomeViewController.swift */,
+				68F549422A0C1C8D009588A0 /* SignUpViewController.swift */,
+				687CFF1229E5FDED00BC3480 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		68A40CBC2A233F0500C03720 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				687CFF1029E5FDED00BC3480 /* SceneDelegate.swift */,
+				687CFF0E29E5FDED00BC3480 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		68A40CBD2A233F6100C03720 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
