@@ -20,6 +20,7 @@
 		68A40CC12A236D7300C03720 /* GadgetCategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40CC02A236D7300C03720 /* GadgetCategoryManager.swift */; };
 		68A40CC32A236D8E00C03720 /* GadgetCategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40CC22A236D8D00C03720 /* GadgetCategoryData.swift */; };
 		68A40CC52A23722000C03720 /* GadgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40CC42A23722000C03720 /* GadgetController.swift */; };
+		68B055712A23B59C00F7871B /* CommonFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B055702A23B59C00F7871B /* CommonFunctionality.swift */; };
 		68F549432A0C1C8D009588A0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F549422A0C1C8D009588A0 /* SignUpViewController.swift */; };
 		68F549452A0C1CAA009588A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F549442A0C1CAA009588A0 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		68A40CC02A236D7300C03720 /* GadgetCategoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GadgetCategoryManager.swift; sourceTree = "<group>"; };
 		68A40CC22A236D8D00C03720 /* GadgetCategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GadgetCategoryData.swift; sourceTree = "<group>"; };
 		68A40CC42A23722000C03720 /* GadgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GadgetController.swift; sourceTree = "<group>"; };
+		68B055702A23B59C00F7871B /* CommonFunctionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctionality.swift; sourceTree = "<group>"; };
 		68F549422A0C1C8D009588A0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		68F549442A0C1CAA009588A0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,7 +147,6 @@
 			children = (
 				687CFF1929E5FDEE00BC3480 /* LaunchScreen.storyboard */,
 				687CFF1429E5FDED00BC3480 /* Main.storyboard */,
-				68A40CBD2A233F6100C03720 /* cells */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -154,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				6875D92D2A0C2D8600F440DF /* UIDesign.swift */,
+				68B055702A23B59C00F7871B /* CommonFunctionality.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -175,13 +177,6 @@
 				687CFF0E29E5FDED00BC3480 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		68A40CBD2A233F6100C03720 /* cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = cells;
 			sourceTree = "<group>";
 		};
 		68A40CBE2A236C5B00C03720 /* Model */ = {
@@ -336,6 +331,7 @@
 				687CFF1329E5FDED00BC3480 /* ViewController.swift in Sources */,
 				687CFF0F29E5FDED00BC3480 /* AppDelegate.swift in Sources */,
 				68A40CC12A236D7300C03720 /* GadgetCategoryManager.swift in Sources */,
+				68B055712A23B59C00F7871B /* CommonFunctionality.swift in Sources */,
 				68A40CC52A23722000C03720 /* GadgetController.swift in Sources */,
 				68F549432A0C1C8D009588A0 /* SignUpViewController.swift in Sources */,
 				687CFF1129E5FDED00BC3480 /* SceneDelegate.swift in Sources */,

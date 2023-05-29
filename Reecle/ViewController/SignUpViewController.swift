@@ -9,7 +9,8 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-    let btnDesign = UIDesignClass()
+    let uiDesign = UIDesignClass()
+    let commonFunctionality = CommonFunctionalityClass()
     
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var finalSignUp: UIButton!
@@ -23,16 +24,21 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         errorLabel.isHidden = true
-        btnDesign.addButtonStyling(btn: finalSignUp)
-        let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
-        navigateBack.addGestureRecognizer(tapGR)
-        navigateBack.isUserInteractionEnabled = true
+        uiDesign.addButtonStyling(btn: finalSignUp)
+        //commonFunctionality.setupNavigateBackGesture(for: navigateBack)
+        navigateBackToPreviousScreen()
     }
 
     @IBAction func newUserSignUp(_ sender: Any) {
         if validateFields() {
             // Perform signup logic.
         }
+    }
+    
+    func navigateBackToPreviousScreen(){
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
+        navigateBack.addGestureRecognizer(tapGR)
+        navigateBack.isUserInteractionEnabled = true
     }
     
     @objc func imageTapped(sender: UITapGestureRecognizer) {

@@ -106,20 +106,8 @@
                     <view key="view" contentMode="scaleToFill" id="1s9-fz-AHS" customClass="HomeViewControler">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Home!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jd0-fA-ty4">
-                                <rect key="frame" x="141.66666666666666" y="452.66666666666669" width="144.99999999999997" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.2557049394" green="0.6139006615" blue="0.24770188330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wU1-UF-z8e"/>
                         <color key="backgroundColor" red="0.73884427549999998" green="0.9043492675" blue="0.73788875340000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Jd0-fA-ty4" firstAttribute="centerX" secondItem="1s9-fz-AHS" secondAttribute="centerX" id="G1X-gT-fv9"/>
-                            <constraint firstItem="Jd0-fA-ty4" firstAttribute="centerY" secondItem="1s9-fz-AHS" secondAttribute="centerY" id="L1c-0v-M1m"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="INu-1M-UgP"/>
                 </viewController>
