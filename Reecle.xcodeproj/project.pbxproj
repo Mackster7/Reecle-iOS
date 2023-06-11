@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		686A7A522A3656B400D16B34 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 686A7A512A3656B400D16B34 /* FirebaseAuth */; };
 		6875D92E2A0C2D8600F440DF /* UIDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6875D92D2A0C2D8600F440DF /* UIDesign.swift */; };
 		687CFF0F29E5FDED00BC3480 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CFF0E29E5FDED00BC3480 /* AppDelegate.swift */; };
 		687CFF1129E5FDED00BC3480 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CFF1029E5FDED00BC3480 /* SceneDelegate.swift */; };
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				686A7A522A3656B400D16B34 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +214,9 @@
 			dependencies = (
 			);
 			name = Reecle;
+			packageProductDependencies = (
+				686A7A512A3656B400D16B34 /* FirebaseAuth */,
+			);
 			productName = Reecle;
 			productReference = 687CFF0B29E5FDED00BC3480 /* Reecle.app */;
 			productType = "com.apple.product-type.application";
@@ -284,6 +289,9 @@
 				Base,
 			);
 			mainGroup = 687CFF0229E5FDED00BC3480;
+			packageReferences = (
+				686A7A502A3656B400D16B34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 687CFF0C29E5FDED00BC3480 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -670,6 +678,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		686A7A502A3656B400D16B34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		686A7A512A3656B400D16B34 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 686A7A502A3656B400D16B34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 687CFF0329E5FDED00BC3480 /* Project object */;
 }
