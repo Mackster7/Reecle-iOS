@@ -106,14 +106,47 @@
                     <view key="view" contentMode="scaleToFill" id="1s9-fz-AHS" customClass="HomeViewControler">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSp-rg-S1o">
+                                <rect key="frame" x="124.33333333333333" y="67" width="179.66666666666669" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.2557049394" green="0.6139006615" blue="0.24770188330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.26455852390000001" green="0.62137836219999998" blue="0.25665894150000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WNo-4s-2zV">
+                                <rect key="frame" x="20" y="120" width="388" height="772"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="6Wg-K6-yCw">
+                                        <rect key="frame" x="0.0" y="50" width="388" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Wg-K6-yCw" id="qWW-rg-5tP">
+                                            <rect key="frame" x="0.0" y="0.0" width="388" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wU1-UF-z8e"/>
                         <color key="backgroundColor" red="0.73884427549999998" green="0.9043492675" blue="0.73788875340000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GSp-rg-S1o" firstAttribute="top" secondItem="wU1-UF-z8e" secondAttribute="top" constant="20" id="4o7-mi-reW"/>
+                            <constraint firstItem="WNo-4s-2zV" firstAttribute="leading" secondItem="wU1-UF-z8e" secondAttribute="leading" constant="20" id="NUj-2H-e5E"/>
+                            <constraint firstItem="wU1-UF-z8e" firstAttribute="trailing" secondItem="WNo-4s-2zV" secondAttribute="trailing" constant="20" id="X3d-df-uKd"/>
+                            <constraint firstItem="WNo-4s-2zV" firstAttribute="top" secondItem="GSp-rg-S1o" secondAttribute="bottom" constant="20" id="ghv-Qa-3KO"/>
+                            <constraint firstItem="GSp-rg-S1o" firstAttribute="centerX" secondItem="1s9-fz-AHS" secondAttribute="centerX" id="iaM-3D-dwA"/>
+                            <constraint firstItem="wU1-UF-z8e" firstAttribute="bottom" secondItem="WNo-4s-2zV" secondAttribute="bottom" id="qdr-ek-3Cd"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="INu-1M-UgP"/>
+                    <connections>
+                        <outlet property="categoryTable" destination="WNo-4s-2zV" id="BkV-fk-ow1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQA-iE-enq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1651" y="383"/>
+            <point key="canvasLocation" x="1650" y="382.93736501079917"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="NCm-kw-CoB">
@@ -228,6 +261,9 @@
     </scenes>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
