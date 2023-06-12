@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -24,6 +25,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func validateDataAndNavigateToNextPage(_ sender: Any) {
+        verifyLoginData()
+    }
+    
+    func verifyLoginData(){
         guard let uname = userNameTextField.text, !uname.isEmpty else {
             print("username is empty")
             return
@@ -33,14 +38,21 @@ class ViewController: UIViewController {
             return
         }
         
-        //Using Storyboard
-        let nextViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomePageController") as! HomeViewController
-        navigationController?.pushViewController(nextViewController, animated: true)
-        
-        //Using Segue
-        //performSegue(withIdentifier: "HomePageController", sender: self)
-        
+        // Firebase email verification code
+        Auth.auth().signIn(withEmail: uname, password: upass) { [weak self] authResult, error in
+            guard let self = self else { return }
+            if let error = error {
+                print("Error signing in: \(error.localizedDescription)")
+                return
+            }
+            
+            // Using Storyboard
+            let nextViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomePageController") as! HomeViewController
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+            
+            // Using Segue
+            // self.performSegue(withIdentifier: "HomePageController", sender: self)
+        }
     }
-    
 }
 
