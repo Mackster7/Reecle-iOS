@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
     
@@ -31,7 +32,7 @@ class SignUpViewController: UIViewController {
 
     @IBAction func newUserSignUp(_ sender: Any) {
         if validateFields() {
-            // Perform signup logic.
+            registerUser()
         }
     }
     
@@ -48,28 +49,45 @@ class SignUpViewController: UIViewController {
     }
     
     func validateFields() -> Bool {
-        if firstNameTextField.text!.isEmpty {
-            showErrorLabel(withMessage: "Firstname cannot be empty!")
-            return false
-        }
-        
-        if lastNameTextField.text!.isEmpty {
-            showErrorLabel(withMessage: "Lastname cannot be empty!")
-            return false
-        }
-        
-        if emailTextField.text!.isEmpty {
-            showErrorLabel(withMessage: "Email cannot be empty!")
-            return false
-        }
-        
-        if passwordTextField.text!.isEmpty {
-            showErrorLabel(withMessage: "Password cannot be empty!")
-            return false
-        }
+        let fields = [
+               (UITextField: firstNameTextField, message: "Firstname cannot be empty."),
+               (UITextField: lastNameTextField, message: "Lastname cannot be empty."),
+               (UITextField: emailTextField, message: "Email cannot be empty."),
+               (UITextField: passwordTextField, message: "Password cannot be empty.")
+           ]
+           
+           for field in fields {
+               if field.UITextField!.text!.isEmpty {
+                   let alert = UIAlertController(title: "Unable to register the user.", message: field.message, preferredStyle: .alert)
+                   alert.addAction(UIAlertAction(title: "Retry", style: .default, handler: nil))
+                   present(alert, animated: true, completion: nil)
+                   return false
+               }
+           }
         
         hideErrorLabel()
         return true
+    }
+    
+    func registerUser(){
+        // Register user with email and password
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { authResult, error in
+            guard let user = authResult?.user, error == nil else {
+                print("Error: \(error!.localizedDescription)")
+                return
+            }
+
+            // Send email verification
+            user.sendEmailVerification { error in
+                if let error = error {
+                    print("Error sending email verification: \(error.localizedDescription)")
+                    return
+                }
+                print("Email verification sent to \(user.email!)")
+                let nextViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomePageController") as! HomeViewController
+                self.navigationController?.pushViewController(nextViewController, animated: true)
+            }
+        }
     }
 
     func showErrorLabel(withMessage message: String) {
