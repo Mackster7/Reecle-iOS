@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
     
@@ -31,7 +32,7 @@ class SignUpViewController: UIViewController {
 
     @IBAction func newUserSignUp(_ sender: Any) {
         if validateFields() {
-            // Perform signup logic.
+            registerUser()
         }
     }
     
@@ -70,6 +71,27 @@ class SignUpViewController: UIViewController {
         
         hideErrorLabel()
         return true
+    }
+    
+    func registerUser(){
+        // Register user with email and password
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { authResult, error in
+            guard let user = authResult?.user, error == nil else {
+                print("Error: \(error!.localizedDescription)")
+                return
+            }
+
+            // Send email verification
+            user.sendEmailVerification { error in
+                if let error = error {
+                    print("Error sending email verification: \(error.localizedDescription)")
+                    return
+                }
+                print("Email verification sent to \(user.email!)")
+                let nextViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomePageController") as! HomeViewController
+                self.navigationController?.pushViewController(nextViewController, animated: true)
+            }
+        }
     }
 
     func showErrorLabel(withMessage message: String) {
