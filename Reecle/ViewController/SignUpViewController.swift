@@ -49,25 +49,21 @@ class SignUpViewController: UIViewController {
     }
     
     func validateFields() -> Bool {
-        if firstNameTextField.text!.isEmpty {
-            showErrorLabel(withMessage: "Firstname cannot be empty!")
-            return false
-        }
-        
-        if lastNameTextField.text!.isEmpty {
-            showErrorLabel(withMessage: "Lastname cannot be empty!")
-            return false
-        }
-        
-        if emailTextField.text!.isEmpty {
-            showErrorLabel(withMessage: "Email cannot be empty!")
-            return false
-        }
-        
-        if passwordTextField.text!.isEmpty {
-            showErrorLabel(withMessage: "Password cannot be empty!")
-            return false
-        }
+        let fields = [
+               (UITextField: firstNameTextField, message: "Firstname cannot be empty."),
+               (UITextField: lastNameTextField, message: "Lastname cannot be empty."),
+               (UITextField: emailTextField, message: "Email cannot be empty."),
+               (UITextField: passwordTextField, message: "Password cannot be empty.")
+           ]
+           
+           for field in fields {
+               if field.UITextField!.text!.isEmpty {
+                   let alert = UIAlertController(title: "Unable to register the user.", message: field.message, preferredStyle: .alert)
+                   alert.addAction(UIAlertAction(title: "Retry", style: .default, handler: nil))
+                   present(alert, animated: true, completion: nil)
+                   return false
+               }
+           }
         
         hideErrorLabel()
         return true
