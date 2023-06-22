@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "category": "Smart Phones"
+  },
+  {
+    "id": 2,
+    "category": "Laptop"
+  },
+  {
+    "id": 3,
+    "category": "Tablet"
+  },
+  {
+    "id": 4,
+    "category": "Monitor/TV"
+  },
+  {
+    "id": 5,
+    "category": "Refridgirator"
+  },
+  {
+    "id": 6,
+    "category": "AC"
+  },
+]

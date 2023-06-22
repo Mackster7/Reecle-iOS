@@ -16,7 +16,17 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        gadgetController.fetchCategories()
+        gadgetController.fetchCategories { (categoryArray, error) in
+            if let error = error {
+                // Handle the error
+                print("Error: \(error)")
+                return
+            }
+            
+            if let categoryArray = categoryArray {
+                self.categories = categoryArray
+            }
+        }
         categoryTable.delegate = self
         categoryTable.dataSource = self
     }
