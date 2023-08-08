@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate {
     
-    var categories : [String] = ["Apple","Mango","Bananna"]
+    var categories : [String] = []
     @IBOutlet weak var categoryTable: UITableView!
         
     private let gadgetController = GadgetController(service: GadgetCategoryManager())
@@ -30,7 +30,8 @@ class HomeViewController: UIViewController, UITableViewDelegate {
         categoryTable.delegate = self
         categoryTable.dataSource = self
     }
-
+    
+    @IBOutlet weak var gadgetTable: UITableView!
     
 }
 
@@ -45,6 +46,13 @@ extension HomeViewController : UITableViewDataSource {
         
         cell.textLabel?.text = categories[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let detailsViewController  = storyboard?.instantiateViewController(identifier: "DetailsViewController") as? DetailsViewController {
+            detailsViewController.labelData = categories[indexPath.row]
+            self.navigationController?.pushViewController(detailsViewController, animated: true)
+        }
     }
 
 }

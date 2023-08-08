@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     
     func verifyLoginData(){
         guard let uname = userNameTextField.text, !uname.isEmpty else {
-            print("username is empty")
+            showSnackbar(message: "username is empty")
             return
         }
         guard let upass = passwordTextField.text, !upass.isEmpty else {
@@ -54,5 +54,21 @@ class ViewController: UIViewController {
             // self.performSegue(withIdentifier: "HomePageController", sender: self)
         }
     }
+}
+
+extension ViewController {
+    
+    public func showSnackbar(message: String, duration: TimeInterval = 2.0) {
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alertController.view.alpha = 0.7
+        alertController.view.layer.cornerRadius = 15
+        
+        self.present(alertController, animated: true) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
+                alertController.dismiss(animated: true, completion: nil)
+            }
+        }
+    }
+    
 }
 

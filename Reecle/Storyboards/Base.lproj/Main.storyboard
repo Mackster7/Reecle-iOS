@@ -108,14 +108,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSp-rg-S1o">
-                                <rect key="frame" x="124.33333333333333" y="67" width="179.66666666666669" height="33"/>
+                                <rect key="frame" x="124.33333333333334" y="67" width="179.66666666666666" height="32.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" red="0.2557049394" green="0.6139006615" blue="0.24770188330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.26455852390000001" green="0.62137836219999998" blue="0.25665894150000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WNo-4s-2zV">
-                                <rect key="frame" x="20" y="120" width="388" height="772"/>
+                                <rect key="frame" x="20" y="119.33333333333331" width="388" height="772.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="6Wg-K6-yCw">
@@ -142,6 +142,7 @@
                     </view>
                     <connections>
                         <outlet property="categoryTable" destination="WNo-4s-2zV" id="BkV-fk-ow1"/>
+                        <outlet property="gadgetTable" destination="WNo-4s-2zV" id="Zvg-2K-4jg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQA-iE-enq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -240,6 +241,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncp-oU-8lW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1638.7850467289718" y="-259.82721382289418"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="QX9-hG-vmF">
+            <objects>
+                <viewController storyboardIdentifier="DetailsViewController" id="LF8-nz-kFR" customClass="DetailsViewController" customModule="Reecle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZNf-Zv-BqF">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nb-fp-KWs">
+                                <rect key="frame" x="19.999999999999996" y="53.999999999999993" width="56.666666666666657" height="28.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.2557049394" green="0.6139006615" blue="0.24770188330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.2557049394" green="0.6139006615" blue="0.24770188330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NYp-1e-x79"/>
+                        <color key="backgroundColor" red="0.73884427549999998" green="0.90434932710000004" blue="0.73788875340000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Nb-fp-KWs" firstAttribute="top" secondItem="NYp-1e-x79" secondAttribute="top" constant="7" id="WKq-wI-maf"/>
+                            <constraint firstItem="3Nb-fp-KWs" firstAttribute="leading" secondItem="NYp-1e-x79" secondAttribute="leading" constant="20" id="dKV-vT-IoZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="3Nb-fp-KWs" id="tFQ-0f-bYZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQX-TI-eMS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2314" y="27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hhf-CP-1Kh">
