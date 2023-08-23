@@ -29,20 +29,22 @@ class ViewController: UIViewController {
     }
     
     func verifyLoginData(){
-        guard let uname = userNameTextField.text, !uname.isEmpty else {
-            print("username is empty")
-            return
-        }
-        guard let upass = passwordTextField.text, !upass.isEmpty else {
-            print("password is empty")
-            return
-        }
+        let fields = [
+               (UITextField: userNameTextField, message: "Username cannot be empty."),
+               (UITextField: passwordTextField, message: "Password cannot be empty."),
+           ]
+           
+           for field in fields {
+               if field.UITextField!.text!.isEmpty {
+                   showAlert(message: field.message)
+               }
+           }
         
         // Firebase email verification code
-        Auth.auth().signIn(withEmail: uname, password: upass) { [weak self] authResult, error in
+        Auth.auth().signIn(withEmail: userNameTextField.text!, password: passwordTextField.text!) { [weak self] authResult, error in
             guard let self = self else { return }
             if let error = error {
-                print("Error signing in: \(error.localizedDescription)")
+                self.showAlert(message: error.localizedDescription)
                 return
             }
             
@@ -53,6 +55,12 @@ class ViewController: UIViewController {
             // Using Segue
             // self.performSegue(withIdentifier: "HomePageController", sender: self)
         }
+    }
+    
+    private func showAlert(message alertMessage: String){
+        let alert = UIAlertController(title: "Unable to login.", message: alertMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Retry", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 }
 
